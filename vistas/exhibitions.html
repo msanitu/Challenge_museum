@@ -1,0 +1,261 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Exhibitions</title>
+    <link rel="stylesheet" href="L MARC\CHALLENGE\css\exhibitions.css">
+    <link rel="javascript" href="/javascript/exhibitions.js">
+</head>
+<style>
+    body {
+  background-color: rgba(255, 219, 242, 0.378);
+}
+
+img {
+  width: 200px;
+  height: 280px;
+  border: 5px dashed rgba(128, 128, 128, 0);
+}
+
+.base {
+  box-shadow: 0 0 3px 3px #fcc167;
+  filter: blur(1px);
+  width: 200px;
+  height: 280px;
+  margin-left: 5px;
+  margin-top: 20px;
+  background-color: rgb(214, 185, 103);
+}
+
+.black {
+  background: #2c1c1c;
+  background: radial-gradient(circle,
+      rgb(18, 16, 16) 20%,
+      rgba(51, 32, 32, 1) 83%,
+      rgb(76, 48, 48) 100%);
+  box-shadow: 0 0 3px 3px rgb(141, 91, 91);
+  transform: rotate(-0.2deg);
+  border-radius: 3px;
+  width: 185px;
+  height: 70px;
+  margin: 2px 7px 2px 7px;
+}
+
+.orange {
+  box-shadow: 0 0 3px 3px rgb(232, 106, 28);
+  width: 187px;
+  margin: 2px 6px 2px 6px;
+  padding-top: 18px;
+  height: 90px;
+  background-color: rgb(206, 152, 27);
+}
+
+.white {
+  background: #d4d2d2;
+  background: linear-gradient(90deg,
+      rgba(212, 210, 210, 1) 0%,
+      rgba(235, 230, 230, 1) 24%,
+      rgba(196, 196, 196, 1) 52%,
+      rgba(235, 232, 232, 1) 68%,
+      rgba(230, 223, 223, 1) 88%,
+      rgba(148, 143, 143, 1) 100%);
+  box-shadow: 0 0 3px 3px #e6e4e1;
+  transform: rotate(0.8deg);
+  border-radius: 3px;
+  width: 182px;
+  margin: 0px 0px 0px 3px;
+  height: 15px;
+}
+
+.red {
+  box-shadow: 0 0 3px 3px rgb(255, 147, 117);
+  transform: rotate(-0.5deg);
+  border-radius: 3px;
+  width: 190px;
+  margin: 2px 5px 2px 5px;
+  padding-top: 18px;
+  height: 75px;
+  background-color: rgb(178, 30, 30);
+}
+
+.base2 {
+  box-shadow: 0 0 3px 3px #1717cf;
+  filter: blur(1px);
+  width: 200px;
+  height: 280px;
+  margin-left: 5px;
+  margin-top: 20px;
+  background-color: rgb(33, 24, 158);
+}
+
+.black2 {
+  background: #130857;
+  background: radial-gradient(circle,
+      rgb(18, 16, 16) 20%,
+      rgba(51, 32, 32, 1) 83%,
+      rgb(76, 48, 48) 100%);
+  box-shadow: 0 0 3px 3px rgb(24, 56, 161);
+  transform: rotate(-0.2deg);
+  border-radius: 3px;
+  width: 185px;
+  height: 130px;
+  margin: 20px 7px 2px 7px;
+}
+
+.blue {
+  box-shadow: 0 0 3px 3px rgb(7, 70, 132);
+  width: 187px;
+  margin: 2px 6px 2px 6px;
+  padding-top: 18px;
+  height: 40px;
+  background-color: rgb(17, 33, 209);
+}
+
+.darkblue {
+  box-shadow: 0 0 3px 3px rgb(22, 45, 68);
+  width: 187px;
+  margin: 2px 6px 2px 6px;
+  padding-top: 18px;
+  height: 60px;
+  background-color: rgb(23, 31, 121);
+}
+
+.base3 {
+  box-shadow: 0 0 3px 3px #3434d3;
+  filter: blur(1px);
+  width: 200px;
+  height: 280px;
+  margin-left: 5px;
+  margin-top: 20px;
+  background-color: rgb(73, 67, 147);
+}
+
+.green {
+  background: radial-gradient(circle,
+      rgb(18, 168, 86) 20%,
+      rgb(14, 129, 72) 83%,
+      rgb(13, 130, 46) 100%);
+  box-shadow: 0 0 5px 3px rgb(16, 145, 72);
+  transform: rotate(-0.2deg);
+  border-radius: 3px;
+  width: 185px;
+  height: 90px;
+  margin: 20px 7px 5px 7px;
+}
+
+.blue2 {
+  box-shadow: 0 0 3px 3px rgb(7, 70, 132);
+  width: 187px;
+  margin: 2px 6px 2px 6px;
+  padding-top: 29px;
+  background-color: rgb(9, 69, 233);
+}
+
+.green2 {
+  background: radial-gradient(circle,
+      rgb(18, 168, 86) 20%,
+      rgb(14, 129, 72) 83%,
+      rgb(13, 130, 46) 100%);
+  box-shadow: 0 0 5px 3px rgb(16, 145, 72);
+  transform: rotate(-0.2deg);
+  border-radius: 3px;
+  width: 185px;
+  height: 135px;
+  margin: 6px 7px 2px 7px;
+}
+
+.exhibitions {
+  margin: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info1, .info2, .info3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+}
+</style>
+<body>
+    <div class="exhibitions">
+        <div class="num24">
+            <div class="base">
+                <div class="black"></div>
+                <div class="orange">
+                    <div class="white"></div>
+                </div>
+                <div class="red"></div>
+            </div>
+            <div class="info1">
+                <h3>
+                Number 24 (Untitled)
+            </h3>
+            <h4>
+                Author: Mark Rothko
+            </h4>
+            <p>
+                Date: 1951 
+            </p>
+            <p>
+                Style: Color Field Painting
+            </p>
+            <p>
+                Genre: abstract
+            </p>
+            </div>
+            
+        </div>
+        <div class="num61">
+            <div class="base2">
+                <div class="black2"></div>
+                <div class="blue"></div>
+                <div class="darkblue"></div>
+            </div>
+        <div class="info2">
+                <h3>
+                Number 61 (Untitled)
+            </h3>
+            <h4>
+                Author: Mark Rothko
+            </h4>
+            <p>
+                Date: 1953 
+            </p>
+            <p>
+                Medium: Oil on canvas
+            </p>
+            <p>
+                Genre: abstract
+            </p>
+            </div>
+        </div>
+        <div class="untitled1957">
+            <div class="base3">
+                <div class="green"></div>
+                <div class="blue2"></div>
+                <div class="green2"></div>
+            </div>
+        <div class="info3">
+                <h3>
+                Untitled 1957 (Untitled)
+            </h3>
+            <h4>
+                Author: Mark Rothko
+            </h4>
+            <p>
+                Date: 1957 
+            </p>
+            <p>
+                Style: Color Field Painting
+            </p>
+            <p>
+                Genre: abstract
+            </p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
