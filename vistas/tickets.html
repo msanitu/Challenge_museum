@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<script>
+
+</script>
+
+<body>
+    <form action="/www.php" method="post">
+        <label for="name">Full name:</label>
+        <input type="text" name="name" id="name" required>
+        <br><br>
+        <label for="email">E-mail</label>
+        <input type="text" name="email" id="email" required>
+        <br><br>
+        <label for="date">Select the date</label>
+        <select name="dateday" id="dateday" required>
+            <option value="Day">1</option>
+            <option value="Day">2</option>
+            <option value="Day">3</option>
+            <option value="Day">4</option>
+            <option value="Day">5</option>
+            <option value="Day">6</option>
+            <option value="Day">7</option>
+            <option value="Day">8</option>
+            <option value="Day">9</option>
+            <option value="Day">10</option>
+            <option value="Day">11</option>
+            <option value="Day">12</option>
+            <option value="Day">13</option>
+            <option value="Day">14</option>
+            <option value="Day">15</option>
+            <option value="Day">16</option>
+            <option value="Day">17</option>
+            <option value="Day">18</option>
+            <option value="Day">19</option>
+            <option value="Day">20</option>
+            <option value="Day">21</option>
+            <option value="Day">22</option>
+            <option value="Day">23</option>
+            <option value="Day">24</option>
+            <option value="Day">25</option>
+            <option value="Day">26</option>
+            <option value="Day">27</option>
+            <option value="Day">28</option>
+            <option value="Day">29</option>
+            <option value="Day">30</option>
+            <option value="Day">31</option>
+            <option value="Day">Day</option>
+
+        </select>
+        <select name="datemonth" id="datemonth" required>
+            <option value="Month">1</option>
+            <option value="Month">2</option>
+            <option value="Month">3</option>
+            <option value="Month">4</option>
+            <option value="Month">5</option>
+            <option value="Month">6</option>
+            <option value="Month">7</option>
+            <option value="Month">8</option>
+            <option value="Month">9</option>
+            <option value="Month">10</option>
+            <option value="Month">11</option>
+            <option value="Month">12</option>
+            <option value="Month">Month</option>
+        </select>
+        <select name="dateyear" id="dateyear" required>
+            <option value="Year">2025</option>
+            <option value="Year">2026</option>
+            <option value="Year">2027</option>
+            <option value="Year">Year</option>
+        </select>
+        <br><br>
+        <label for="timeslot">Select time-slot</label required>
+        <select name="hour" id="hour">
+            <option value="19:00-20:00">19:00-20:00</option>
+            <option value="18:00-19:00">18:00-19:00</option>
+            <option value="17:00-18:00">17:00-18:00</option>
+            <option value="16:00-17:00">16:00-17:00</option>
+            <option value="15:00-16:00">15:00-16:00</option>
+            <option value="14:00-15:00">14:00-15:00</option>
+            <option value="13:00-14:00">13:00-14:00</option>
+            <option value="12:00-13:00">12:00-13:00</option>
+            <option value="11:00-12:00">11:00-12:00</option>
+            <option value="10:00-11:00">10:00-11:00</option>
+            <option value="9:00-10:00">9:00-10:00</option>
+            <option value="8:00-9:00">8:00-9:00</option>
+        </select>
+        <br><br>
+        <label for="quantity">Number of Tickets (max 10)</label>
+        <input type="text" name="quantity" id="quantity" required>
+        <br><br>
+        <hr>
+        <p>Select the type of Tickets:</p>
+        <input type="radio" name="type" id="adult" value="adult">
+        <label for="type">Adult 12€</label>
+        <br>
+        <input type="radio" name="type" id="student" value="student">
+        <label for="type">Student 8€</label>
+        <br>
+        <input type="radio" name="type" id="child" value="child">
+        <label for="type">Child 5€</label>
+        <br><br>
+        <label for="guide">Do you wish to have guidance?</label>
+        <input type="checkbox" name="guide" id="guide" value="guide" required>
+        <br><br>
+        <label for="discount" name="discount" id="discount">Discount code: </label>
+        <input type="text" id="discount">
+        
+        <input type="button" onclick="" id="submit">
+    </form>
+</body>
+
+</html>
