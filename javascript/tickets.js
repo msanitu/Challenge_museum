@@ -1,32 +1,31 @@
 
+
+
 function Calculate() {
 
-    let ticketNum = document.getElementById("quantity").value;
+    const ticketNum = parseInt(document.getElementById("quantity").value);
 
-    if (ticketNum < 1) {
-        alert("Please enter a valid ticket quantity");
-    }else{
-        
-        let ticketType = document.querySelector('input[name="type"]:checked').value;
+    if (isNaN(ticketNum) || ticketNum < 1) {
+        alert("Please enter a valid ticket quantity (min 1)");
 
-        let total = parseFloat(ticketNum * ticketType);
+    } else {
+        const ticketType = parseFloat(document.querySelector('input[name="type"]:checked').value);
+        let total = ticketNum * ticketType;
 
-        let guide = parseInt(document.querySelector('input[name="guide"]:checked').value);
-        total += guide;
-        let discount = document.getInner("discount").value;
-
-
-        if (discount == "MUSEUM10") {
-            
-            total = total-(total/0.1);
-            document.getElementById("result").innerHTML = "Amount to pay:  " + total; 
-
-        }else{
-            document.getElementById("result").innerHTML = "Amount to pay:  " + total; 
+        const guideCheckbox = document.getElementById("guide");
+        if (guideCheckbox && guideCheckbox.checked) {
+            total += parseFloat(guideCheckbox.value);
         }
 
-        
+        const discountInput = (document.getElementById("discount").value).toUpperCase();
 
+        if (discountInput == "MUSEUM10") {
+            total = +(total * 0.9);
+        }
+
+        document.getElementById("result").textContent = "Amount to pay: " + total.toFixed(2) + " €";
     }
+
+
 }
 
