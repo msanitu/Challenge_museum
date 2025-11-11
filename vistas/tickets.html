@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tickets</title>
+    <link rel="stylesheet" href="../css/tickets.css">
 </head>
 <script>
 
 </script>
 
 <body>
-    <form action="/www.php" method="post">
+    <div class="forms">
+        <form action="/www.php" method="post">
         <label for="name">Full name:</label>
-        <input type="text" name="name" id="name" required>
+        <input type="text" name="name" id="name" >
         <br><br>
         <label for="email">E-mail</label>
-        <input type="text" name="email" id="email" required>
+        <input type="text" name="email" id="email" >
         <br><br>
         <label for="date">Select the date</label>
-        <select name="dateday" id="dateday" required>
+        <select name="dateday" id="dateday" >
             <option value="Day">1</option>
             <option value="Day">2</option>
             <option value="Day">3</option>
@@ -53,7 +55,7 @@
             <option value="Day">Day</option>
 
         </select>
-        <select name="datemonth" id="datemonth" required>
+        <select name="datemonth" id="datemonth" >
             <option value="Month">1</option>
             <option value="Month">2</option>
             <option value="Month">3</option>
@@ -68,14 +70,14 @@
             <option value="Month">12</option>
             <option value="Month">Month</option>
         </select>
-        <select name="dateyear" id="dateyear" required>
+        <select name="dateyear" id="dateyear" >
             <option value="Year">2025</option>
             <option value="Year">2026</option>
             <option value="Year">2027</option>
             <option value="Year">Year</option>
         </select>
         <br><br>
-        <label for="timeslot">Select time-slot</label required>
+        <label for="timeslot">Select time-slot</label >
         <select name="hour" id="hour">
             <option value="19:00-20:00">19:00-20:00</option>
             <option value="18:00-19:00">18:00-19:00</option>
@@ -92,27 +94,38 @@
         </select>
         <br><br>
         <label for="quantity">Number of Tickets (max 10)</label>
-        <input type="text" name="quantity" id="quantity" required>
+        <input value="1" type="number" name="quantity" id="quantity" min="-10" max="10" required>
         <br><br>
         <hr>
         <p>Select the type of Tickets:</p>
-        <input type="radio" name="type" id="adult" value="adult">
+        <input type="radio" name="type" id="adult" value="12" required>
         <label for="type">Adult 12€</label>
         <br>
-        <input type="radio" name="type" id="student" value="student">
+        <input type="radio" name="type" id="student" value="8" required>
         <label for="type">Student 8€</label>
         <br>
-        <input type="radio" name="type" id="child" value="child">
+        <input type="radio" name="type" id="child" value="5" required>
         <label for="type">Child 5€</label>
         <br><br>
         <label for="guide">Do you wish to have guidance?</label>
-        <input type="checkbox" name="guide" id="guide" value="guide" required>
+        <input type="checkbox" name="guide" id="guide" value="4" >
         <br><br>
         <label for="discount" name="discount" id="discount">Discount code: </label>
         <input type="text" id="discount">
-        
-        <input type="button" id="submit">
+        <hr>
+        <div class="submit">
+                <input type="button" id="submit" value="Calculate" onclick="Calculate()">
+        </div>
+        <div class="result">
+            <p id="result">
+                Amount to pay:
+            </p>
+        </div>
     </form>
+    </div>
+    
+
+    <script src="../javascript/tickets.js"></script>
 </body>
 
 </html>
