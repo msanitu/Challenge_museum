@@ -19,7 +19,17 @@ body {
     justify-content: center;
     scale: 1.75;
 }
-.result{
-    position: relative;
-    top: -30px;
+
+.result {
+    margin-top: 40px;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.result p{
+margin-top: -15px;
+}
+
+.opcionales{
+    visibility: hidden;
 }
