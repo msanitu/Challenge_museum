@@ -23,7 +23,35 @@ function Calculate() {
             total = +(total * 0.9);
         }
 
-        document.getElementById("result").textContent = "Amount to pay: " + total.toFixed(2) + " €";
+        document.getElementById("result").textContent = 
+        '<p id="result">'
+                + '"Amount to pay: "' + total.toFixed(2) + '" €"' +
+            '</p>'+
+            '<p>'
+                + 'Name:'+
+            '</p>'
+            '<p>'
+                'E-mail:'
+            '</p>'
+            '<p>'
+                'Date:'
+            '</p>'
+            '<p>'
+                'Time:'
+            '</p>'
+            '<p>'
+                'Ticket amount:'
+            '</p>'
+            '<p>'
+                'Ticket type:'
+            '</p>'
+            '<div class="opcionales" id="opcionales">'
+                '<p>'
+                    'Guidenace:'
+                '</p>'
+                '<p>'
+                    'Discount:'
+                '</p>;';
     }
 
 
