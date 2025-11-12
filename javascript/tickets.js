@@ -13,7 +13,7 @@ function Calculate() {
 
         let guide = parseInt(document.querySelector('input[name="guide"]:checked').value);
         total += guide;
-        let discount = document.getInner("discount").value;
+        let discount = document.getElementById("discount").value;
 
 
         if (discount == "MUSEUM10") {
