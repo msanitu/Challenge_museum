@@ -1,3 +1,15 @@
+header{
+    background-image: url(../img/expo4.jpg);
+    position: relative;
+    width: 100%;
+    top: -50px;
+    background-position: center;
+    height: 87vh;
+    min-height: 500px;
+    max-width: 3840px;
+    z-index: -1;
+}
+
 body {
     background-color: rgba(74, 172, 172,1.00);
 }
