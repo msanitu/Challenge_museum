@@ -21,12 +21,19 @@ function Calculate() {
 
         const discountInput = (document.getElementById("discount").value).toUpperCase();
 
+        
         if (discountInput == "MUSEUM10") {
             total = +(total * 0.9);
-            document.getElementById("code").style.visibility = "visible";
-            document.getElementById("code").textContent = "Discount: 10%";
+          document.getElementById("code").style.visibility = "visible";
         }
-  
+
+        if (ticketType == 12) {
+            const type = "Adult";
+        } else if (ticketType == 8) {
+            const type = "Student";
+        } else {
+            const type = "Child";
+        }
 
         document.getElementById("moneyAmount").textContent = "Amount to pay: " + total.toFixed(2) + " €";
         document.getElementById("name").textContent = "Name: " + (document.getElementById("nameForm").value);
