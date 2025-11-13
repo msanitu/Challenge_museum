@@ -1,11 +1,11 @@
 body {
-    background-color: antiquewhite;
+    background-color: rgba(74, 172, 172,1.00);
 }
 
 .forms {
     position: relative;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(203, 203, 203);
+    background-color: rgb(168, 193, 234);
     border-radius: 40px;
     padding: 50px;
     margin: 200px;
@@ -19,6 +19,7 @@ body {
 }
 
 .result {
+    margin-left: 40px;
     margin-top: 40px;
     font-size: 20px;
     justify-content: center;
