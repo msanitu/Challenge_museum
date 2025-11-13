@@ -4,8 +4,10 @@
 function Calculate() {
 
     const ticketNum = parseInt(document.getElementById("quantity").value);
+
     document.getElementById("guidance").textContent = "Guidenace: No";
     document.getElementById("code").textContent = "Discount: No";
+
     if (ticketNum < 1) {
         alert("Please enter a valid ticket quantity (min 1)");
     } else {
@@ -15,17 +17,15 @@ function Calculate() {
 
         const guideCheckbox = document.getElementById("guide");
         if (guideCheckbox && guideCheckbox.checked) {
-            document.getElementById("guidance").style.display = "block";
             document.getElementById("guidance").textContent = "Guidenace: Yes";
             total += parseFloat(guideCheckbox.value);
         }
 
         const discountInput = (document.getElementById("discount").value).toUpperCase();
 
-        
+
         if (discountInput == "MUSEUM10") {
             total = +(total * 0.9);
-            document.getElementById("code").style.visibility = "visible";
             document.getElementById("code").textContent = "Discount: 10%";
         }
 
