@@ -14,7 +14,7 @@ function Calculate() {
 
         const guideCheckbox = document.getElementById("guide");
         if (guideCheckbox && guideCheckbox.checked) {
-            document.getElementById("guidance").style.visibility = "visible";
+            document.getElementById("guidance").style.display = "block";
             document.getElementById("guidance").textContent = "Guidenace: Yes";
             total += parseFloat(guideCheckbox.value);
         }
@@ -24,15 +24,16 @@ function Calculate() {
         
         if (discountInput == "MUSEUM10") {
             total = +(total * 0.9);
-          document.getElementById("code").style.visibility = "visible";
+            document.getElementById("code").style.visibility = "visible";
+            document.getElementById("code").textContent = "Discount: 10%";
         }
 
         if (ticketType == 12) {
-            const type = "Adult";
+            type = "Adult";
         } else if (ticketType == 8) {
-            const type = "Student";
+            type = "Student";
         } else {
-            const type = "Child";
+            type = "Child";
         }
 
         document.getElementById("moneyAmount").textContent = "Amount to pay: " + total.toFixed(2) + " €";
@@ -41,7 +42,7 @@ function Calculate() {
         document.getElementById("date").textContent = "Date: " + (document.getElementById("dateday").value) + "/" + (document.getElementById("datemonth").value) + "/" + (document.getElementById("dateyear").value);
         document.getElementById("time").textContent = "Time: " + (document.getElementById("hour").value);
         document.getElementById("ticketAmount").textContent = "Ticket Amount: " + (document.getElementById("quantity").value);
-
+        document.getElementById("typeTicket").textContent = "Ticket type: " + type;
 
 
     }
