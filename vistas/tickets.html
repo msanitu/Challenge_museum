@@ -84,7 +84,7 @@
                     <option value="4">4</option>
                     <option value="5">5</option>
                     <option value="6">6</option>
-                    <option value="7" >7</option>
+                    <option value="7">7</option>
                     <option value="8">8</option>
                     <option value="9">9</option>
                     <option value="10">10</option>
@@ -120,15 +120,17 @@
                 <br><br>
                 <hr>
                 <p>Select the type of Tickets:</p>
-                <input type="radio" name="type" id="adult" value="12" required>
-                <label for="adult">Adult 12€</label>
+                <div class="radio">
+                    <input type="radio" name="type" id="adult" value="12" required>
+                    <label for="adult">Adult 12€</label>
+                    <br>
+                    <input type="radio" name="type" id="student" value="8" required>
+                    <label for="student">Student 8€</label>
+                    <br>
+                    <input type="radio" name="type" id="child" value="5" required>
+                    <label for="child">Child 5€</label>
+                </div>
                 <br>
-                <input type="radio" name="type" id="student" value="8" required>
-                <label for="student">Student 8€</label>
-                <br>
-                <input type="radio" name="type" id="child" value="5" required>
-                <label for="child">Child 5€</label>
-                <br><br>
                 <label for="guide">Do you wish to have guidance?</label>
                 <input type="checkbox" name="guide" id="guide" value="4">
                 <br><br>
