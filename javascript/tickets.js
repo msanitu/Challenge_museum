@@ -4,7 +4,8 @@
 function Calculate() {
 
     const ticketNum = parseInt(document.getElementById("quantity").value);
-
+    document.getElementById("guidance").textContent = "Guidenace: No";
+    document.getElementById("code").textContent = "Discount: No";
     if (ticketNum < 1) {
         alert("Please enter a valid ticket quantity (min 1)");
     } else {
