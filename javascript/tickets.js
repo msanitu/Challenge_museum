@@ -24,13 +24,17 @@ function Calculate() {
           document.getElementById("code").style.visibility = "visible";
         }
 
-        if (ticketType == 12) {
+
+        /* MAIDER  */
+        
+
+       /* if (ticketType == 12) {
             const type = "Adult";
         } else if (ticketType == 8) {
             const type = "Student";
         } else {
             const type = "Child";
-        }
+        } */
 
         document.getElementById("moneyAmount").textContent = "Amount to pay: " + total.toFixed(2) + " €";
         document.getElementById("name").textContent = "Name: " + (document.getElementById("nameForm").value);
