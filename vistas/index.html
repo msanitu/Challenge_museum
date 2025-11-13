@@ -1,12 +1,71 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="javascript" href="/javascript/index.js">
-</head>
-<body>
+    <title>Codes Museum</title>
     
+    <link rel="stylesheet" href="./estilos.css">
+<body>
+    <nav>
+        <ul>
+            <li class="nosubmenu"><a href="index.html">Home</a></li>
+    
+            <li class="submenu">
+                <a href="exhibitions.html">Exhibitions</a>
+                    <ul class="sub">
+                        <li><a href="#">Special Exhibition</a></li>
+                        <li><a href="#">Free Exhibition</a></li>
+                        <li><a href="#">Guided Tours</a></li>
+                    </ul>
+            </li>
+    
+            <li class="nosubmenu"><a href="tickets.html">Tickets</a></li>
+        </ul>
+    </nav>
+    <header>
+        <video id="video" width="320" height="240" autoplay loop muted playsinline>
+            <source src="../ChallengeMuseum/img/header.webm" type="video/webm">
+        </video>
+    </header>
+    <main>
+        <section>
+            <article class="art01">
+                <div class="inf">
+                    <picture>
+                        <img width="480" height="339" loading="lazy" src="../ChallengeMuseum/img/expo1.jpg" alt="">
+                    </picture>
+                    <div class="info">
+                        <h3>Special Exhibition</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam odit impedit beatae quibusdam placeat blanditiis suscipit, eaque accusamus, explicabo, dicta praesentium id necessitatibus maxime illum libero corrupti tempora nihil ab.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum praesentium facere aperiam iusto eaque doloremque et aliquid quis minima quae maiores tempora provident, aspernatur pariatur dicta, repellat, dolor magni labore.</p>
+                    </div> 
+                </div>    
+            </article>
+            <article class="art02">
+                <div class="inf">
+                    <div class="card">
+                        <h3>Free Exhibition</h3><br>
+                        <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>
+                        <a class="boton" href="">Go</a>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="card">
+                        <h3>Guided Tour</h3><br>
+                        <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>
+                        <a class="boton" href="">Booked</a>
+                    </div>
+
+                </div>
+       
+        
+  
+            </article>
+        </section>
+    </main>
+
+
+<script src="./javascript.js"></script>
 </body>
 </html>
