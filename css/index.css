@@ -97,8 +97,6 @@ section{
         opacity: 0.8;
         background-size: cover;
         background-position: center;
-        display: flex;
-        align-items: center;
         justify-content: center;
         text-align: center;
         position: relative;
