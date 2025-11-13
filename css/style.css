@@ -109,3 +109,14 @@ nav ul li .sub li {
 	border-bottom: 1px solid white;
 }
 
+footer {
+    background-color: rgba(74, 172, 172,1.00);
+    height: 50vh;
+    margin-top: -50px;
+    >h2{
+    align-items: center;
+    padding: 50px;
+    margin: auto;
+    }
+
+}
