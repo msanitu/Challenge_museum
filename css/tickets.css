@@ -83,3 +83,10 @@ article{
     margin-top: 10px;
 }
 
+.tabla1{
+    border: 3px  rgba(74, 172, 172, 1) solid;
+}
+tr,th{
+    padding: 5px;
+    border: 1px rgb(155, 153, 153) solid;
+}
