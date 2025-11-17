@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codes Museum</title>
-    
-    <link rel="stylesheet" href="./estilos.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
 <body>
     <nav>
         <ul>
             <li class="nosubmenu"><a href="index.html">Home</a></li>
-    
+
             <li class="submenu">
                 <a href="exhibitions.html">Exhibitions</a>
-                    <ul class="sub">
-                        <li><a href="#">Special Exhibition</a></li>
-                        <li><a href="#">Free Exhibition</a></li>
-                        <li><a href="#">Guided Tours</a></li>
-                    </ul>
+                <ul class="sub">
+                    <li><a href="#special">Special Exhibition</a></li>
+                    <li><a href="#free">Free Exhibition</a></li>
+                    <li><a href="#tour">Guided Tours</a></li>
+                </ul>
             </li>
-    
+
             <li class="nosubmenu"><a href="tickets.html">Tickets</a></li>
         </ul>
     </nav>
     <header>
         <video id="video" width="320" height="240" autoplay loop muted playsinline>
-            <source src="../ChallengeMuseum/img/header.webm" type="video/webm">
+            <source src="../img/header.webm" type="video/webm">
         </video>
     </header>
     <main>
@@ -33,39 +41,67 @@
             <article class="art01">
                 <div class="inf">
                     <picture>
-                        <img width="480" height="339" loading="lazy" src="../ChallengeMuseum/img/expo1.jpg" alt="">
+                        <img width="480" height="339" loading="lazy" src="../img/expo1.jpg" alt="">
                     </picture>
-                    <div class="info">
-                        <h3>Special Exhibition</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam odit impedit beatae quibusdam placeat blanditiis suscipit, eaque accusamus, explicabo, dicta praesentium id necessitatibus maxime illum libero corrupti tempora nihil ab.</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum praesentium facere aperiam iusto eaque doloremque et aliquid quis minima quae maiores tempora provident, aspernatur pariatur dicta, repellat, dolor magni labore.</p>
-                    </div> 
-                </div>    
+                    <div class="info" id="special">
+                        <h2>Special Exhibition</h2>
+                        <h3>Echoes of the Past, Visions of the Future</h3>
+                        <p>Immerse yourself in a unique experience that transcends time and space. Our new special
+                            exhibition, "Echoes of the Past, Visions of the Future," invites you to explore the
+                            fascinating intersection of history and innovation. Discover ancient artifacts that tell
+                            forgotten stories and marvel at contemporary creations that push the boundaries of
+                            imagination.</p>
+
+                        <p>Through a carefully curated selection of artworks, historical objects, and interactive
+                            projections, this exhibition will guide you on a reflective journey about how the legacy of
+                            our ancestors shapes our present and inspires us to build a bolder tomorrow. Don't miss this
+                            opportunity to connect with cultural heritage and glimpse the infinite possibilities that
+                            await us.</p>
+
+                        <p>We look forward to sharing this unforgettable adventure with you!</p>
+                    </div>
+                </div>
             </article>
             <article class="art02">
                 <div class="inf">
-                    <div class="card">
+                    <div class="card" id="free">
                         <h3>Free Exhibition</h3><br>
-                        <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>
-                        <a class="boton" href="">Go</a>
+                        <p>Discover a curated selection of art and history, accessible to all visitors at no cost.</p>
+                        <br>
+                        <a class="boton"
+                            href="https://www.museothyssen.org/en/visit/hours-free-entry-exhibitions-madrid">Show
+                            more</a>
                     </div>
                 </div>
                 <div class="info">
-                    <div class="card">
+                    <div class="card" id="tour">
                         <h3>Guided Tour</h3><br>
-                        <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>
-                        <a class="boton" href="">Booked</a>
+                        <p>Enhance your visit with expert insights and fascinating stories from our knowledgeable
+                            guides.</p><br>
+                        <a class="boton" href="https://turismotalavera.com/que-ver-en-talavera-de-la-reina.html">Show
+                            more</a>
                     </div>
 
                 </div>
-       
-        
-  
+
+
+
             </article>
         </section>
     </main>
+    <footer>
+        <a href="">Legal terms</a>
+        <a href="">Public tenders</a>
+        <a href="">Transparency site</a>
+        <a href="">Whistleblower channel</a>
+        <a href="">Use of images</a>
+        <a href="">Accessibility and quality</a>
+        <a href="">Environment, Sustainability & 2030 Agenda</a>
+        <a href="">Contact</a>
+    </footer>
 
 
-<script src="./javascript.js"></script>
+    <script src="../javascript/index.js"></script>
 </body>
+
 </html>
