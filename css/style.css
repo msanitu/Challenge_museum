@@ -120,3 +120,21 @@ footer {
     }
 
 }
+
+
+
+
+/* --------- FOOTER----------  */
+
+.pie{
+    display: flex;
+    justify-content: space-between;
+    align-content;
+}
+
+.pie p{
+    position: relative;
+    top: 60px;
+    font-size: 13px;
+    margin: 60px;
+}

@@ -65,13 +65,16 @@ section{
             }
         }
         .info{
+            border: solid rgba(74, 172, 172,1.00) 3px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: flex-start;
+            margin-left: 200px;
+            scale: 1.5;
             row-gap: 20px;
             padding: 20px;
-            width: 40%;
+            width: 30%;
             
         }
     
