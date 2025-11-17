@@ -35,7 +35,7 @@
     <main>
         <section>
             <article>
-                <div class="info">
+                <div class="info customFont">
                     <div class="card">
                         <table class="tabla1">
                             <tr>
@@ -93,7 +93,7 @@
 
                 </div>
                 <div class="forms">
-                    <div class="mainForm">
+                    <div class="mainForm customFont">
                         <form id="form" action="/www.php" method="post">
                             <label for="name">Full name:</label>
                             <input type="text" name="name" id="nameForm" required>
@@ -179,7 +179,9 @@
                             <input value="1" type="number" name="quantity" id="quantity" min="0" max="10" required>
                             <br><br>
                             <hr>
+                            <br>
                             <p>Select the type of Tickets:</p>
+                            <br>
                             <div class="radio">
                                 <input type="radio" name="type" id="adult" value="12" required>
                                 <label for="adult">Adult 12€</label>
@@ -196,6 +198,7 @@
                             <br><br>
                             <label for="discount">Discount code: </label>
                             <input type="text" id="discount" name="discount" placeholder="MUSEUM10">
+                            <br><br>
                             <hr><br>
                             <div class="submit">
                                 <input type="button" class="boton" id="submit" value="Calculate" onclick="Calculate()">
@@ -243,5 +246,15 @@
 
     <script src="../javascript/tickets.js"></script>
 </body>
+<footer>
+    <a href="">Legal terms</a>
+    <a href="">Public tenders</a>
+    <a href="">Transparency site</a>
+    <a href="">Whistleblower channel</a>
+    <a href="">Use of images</a>
+    <a href="">Accessibility and quality</a>
+    <a href="">Environment, Sustainability & 2030 Agenda</a>
+    <a href="">Contact</a>
+</footer>
 
 </html>

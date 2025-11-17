@@ -1,4 +1,4 @@
-header{
+header {
     background-image: url(../img/expo4.jpg);
     position: relative;
     width: 100%;
@@ -9,7 +9,11 @@ header{
     max-width: 3840px;
     z-index: -1;
 }
-article{
+body{
+    background-color: rgb(193, 227, 229);
+}
+
+article {
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -17,30 +21,33 @@ article{
     position: relative;
     width: 90%;
     display: flex;
-    >.info{
+
+    >.info {
         width: 100%;
         height: 500px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        flex-wrap: wrap ;
+        flex-wrap: wrap;
         background-size: cover;
         background-position: center;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-        position: relative;  
+        position: relative;
         margin-top: 100px;
-        >.card{
-            
+
+        >.card {
+
             padding: 50px;
             width: 50%;
             position: absolute;
-            bottom: 20px;  
+            bottom: 20px;
         }
     }
-    >.forms{
+
+    >.forms {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -49,7 +56,6 @@ article{
         padding: 20px;
         width: 100%;
         position: relative;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         background-color: rgba(74, 172, 172, 0.5);
         justify-content: center;
         border-radius: 40px;
@@ -57,15 +63,22 @@ article{
         margin: auto;
         margin-top: 150px;
         width: 50%;
-        scale: 1.25; 
+        scale: 1.25;
     }
 }
 
-    
-.radio{
+.customFont {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.radio {
     display: flex;
     justify-content: space-between;
 }
+
 .button {
     margin: 20px;
     scale: 1.5;
@@ -83,20 +96,28 @@ article{
     margin-top: 10px;
 }
 
-.tabla1{
+.tabla1 {
     position: relative;
     left: 80px;
-    border: 3px  rgba(74, 172, 172, 1) solid;
-    scale: 2;
+    border: 3px rgba(74, 172, 172, 1) solid;
+    scale: 1.5;
 }
-.tabla2{
+
+.tabla2 {
     position: relative;
     left: 100px;
-    top: 200px;
-    border: 3px  rgba(74, 172, 172, 1) solid;
-    scale: 2;
+    top: 100px;
+    border: 3px rgba(74, 172, 172, 1) solid;
+    scale: 1.5;
 }
-tr,th{
+
+tr,
+th {
     padding: 5px;
     border: 1px rgb(155, 153, 153) solid;
+}
+
+footer{
+    position: relative;
+    bottom: -200px;
 }
